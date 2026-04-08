@@ -21,3 +21,15 @@ void InsertList(ElemType A[], int *n, int i, ElemType item){
     A[i - 1] = item;
     n++;
 }
+
+void DELETELIST(ElemType A[], int *n, int i){
+    int j;
+    if(n ==0)
+        return;
+    if(i < 1 || i > n+1)
+        return;
+    for(j = i; i < n; j++){
+        A[j - 1] = A[j];
+    }
+    n--;
+}
