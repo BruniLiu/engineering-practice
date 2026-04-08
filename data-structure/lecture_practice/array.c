@@ -14,5 +14,10 @@ void InsertList(ElemType A[], int *n, int i, ElemType item){
     if (n == MaxSize)
         return;
     if (i < 1 || i > n+1)
-        return;    
+        return; 
+    for(j = n; j >= i; j--){
+        A[j] = A[j - 1];
+    }   
+    A[i - 1] = item;
+    n++;
 }
