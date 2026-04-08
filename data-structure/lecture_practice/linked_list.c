@@ -27,8 +27,8 @@ void printPoly(int *P, int n) {
 }
 
 int main() {
-    int A[] = {1, 2, 3};   // 1 + 2x + 3x^2
-    int B[] = {4, 5};      // 4 + 5x
+    int A[] = {1, 2, 3};  
+    int B[] = {4, 5};     
 
     int na = 3;
     int nb = 2;
