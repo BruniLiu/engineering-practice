@@ -24,7 +24,7 @@ void InsertList(ElemType A[], int *n, int i, ElemType item){
 
 void DELETELIST(ElemType A[], int *n, int i){
     int j;
-    if(n ==0)
+    if(n == 0)
         return;
     if(i < 1 || i > n+1)
         return;
