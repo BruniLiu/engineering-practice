@@ -13,6 +13,17 @@ void InsertList(int i, int *n, int arr[], int item){
     (*n)++;
 }
 
+void DeleteList(int i, int *n, int arr[]){
+    if(*n == 0)
+        return;
+    if(i < 0 || i > *n)
+        return;
+    for(int a = i; a < *n; a++){
+        arr[a] = arr[a+1];
+    }
+    (*n)--;
+}
+
 int main(){
     int i, item;
     int n;
@@ -29,5 +40,10 @@ int main(){
     for(int a = 0; a < n; a++){
         printf("%d", arr[a]);
     }
-
+    printf("\n");
+    DeleteList(i, &n, arr);
+    for(int a = 0; a < n; a++){
+        printf("%d", arr[a]);
+    }
+    return 0;
 }
