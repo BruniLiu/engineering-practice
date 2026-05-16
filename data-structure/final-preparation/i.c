@@ -32,3 +32,7 @@ int main(){
     free(L);
     return 0;
 }
+
+// malloc basic using guidelines:
+// malloc(how much) - e.g. malloc(40)
+// int *p = (int*)malloc(sizeof(int));
