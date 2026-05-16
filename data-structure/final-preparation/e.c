@@ -15,12 +15,12 @@ void initList(sql *L) {
 
 int insertElem(sql *L, int position, Elementype e) {
     if (L->length >= MaxSize) {
-        printf("顺序表已满\n");
+        printf("FULL!\n");
         return 0;
     }
 
     if (position < 1 || position > L->length + 1) {
-        printf("插入位置不合法\n");
+        printf("Error\n");
         return 0;
     }
 
