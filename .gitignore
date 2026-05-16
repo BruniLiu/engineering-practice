@@ -1,1 +1,67 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE state
+.idea/
+**/.vscode/*
+!/.vscode/
+!/.vscode/tasks.json
+!/.vscode/extensions.json
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Python packaging and build outputs
+build/
+dist/
+*.egg-info/
+
+# Machine learning generated artifacts
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+machine-learning/**/experiments/results.csv
+
+# C and C++ build outputs
 *.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+Debug/
+Release/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
