@@ -65,3 +65,10 @@ Release/
 *.bak
 *.swp
 *~
+
+.venv/
+__pycache__/
+*.pyc
+checkpoints/
+runs/
+.DS_Store
