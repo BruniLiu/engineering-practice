@@ -36,6 +36,24 @@ bool Insert(SqList *L){
     return true;
 }
 
+bool deleteList(SqList *L){
+    int i;
+    printf("\nWhich position do you want to delete?\n");
+    scanf("%d", &i);
+    if(i<1||i>L->length){
+        return false;
+    }
+    for(int j = i-1; j<L->length;j++){
+        L->data[j] = L->data[j+1];
+    }
+    L->length--;
+    printf("The list is:\n");
+    for(int i = 0; i < L->length; i++){
+        printf("%d ", L->data[i]);
+    } 
+    return true;
+}
+
 void createList(SqList *L){
     printf("How many numbers?\n");
     scanf("%d", &L->length);
@@ -55,5 +73,6 @@ int main(){
     SqList A;
     createList(&A);
     Insert(&A);
+    deleteList(&A);
     return 0;
 }
