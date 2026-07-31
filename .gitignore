@@ -72,3 +72,9 @@ __pycache__/
 checkpoints/
 runs/
 .DS_Store
+
+# Datasets and downloaded corpora
+**/data/
+*.zip
+*.tar.gz
+text8
